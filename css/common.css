@@ -1,0 +1,64 @@
+
+* ,
+*::before,
+*::after{
+	box-sizing:border-box;
+}
+
+.center-l {
+	box-sizing: content-box;
+}
+
+
+:root {
+	--font-plain: Helvetica Neue,Helvetica,Arial,sans-serif;
+	--font-special: Barlow Condensed,Helvetica,sans-serif;
+	--font-mono: Menlo,Courier,Courier New,Andale Mono,monospace;
+	--color-dark: hsl(0,0%,0%);/*#050505;*/
+	--color-darkish: hsl(0,0%,25%);/* #404040; */
+	--color-lightish: hsl(0,0%,90%);/* #e6e6e6; */
+	--color-light: hsl(0,0%,98%);/* #fafafa; */
+	--color-mid: grey;
+	--ratio: 1.4;
+	--s-5: calc(var(--s0)/var(--ratio)/var(--ratio)/var(--ratio)/var(--ratio)/var(--ratio));
+	--s-4: calc(var(--s0)/var(--ratio)/var(--ratio)/var(--ratio)/var(--ratio));
+	--s-3: calc(var(--s0)/var(--ratio)/var(--ratio)/var(--ratio));
+	--s-2: calc(var(--s0)/var(--ratio)/var(--ratio));
+	--s-1: calc(var(--s0)/var(--ratio));
+	--s0: 1rem;
+	--s1: calc(var(--s0)*var(--ratio));
+	--s2: calc(var(--s0)*var(--ratio)*var(--ratio));
+	--s3: calc(var(--s0)*var(--ratio)*var(--ratio)*var(--ratio));
+	--s4: calc(var(--s0)*var(--ratio)*var(--ratio)*var(--ratio)*var(--ratio));
+	--s5: calc(var(--s0)*var(--ratio)*var(--ratio)*var(--ratio)*var(--ratio)*var(--ratio));
+	--measure: 65ch;
+	--line-height: var(--ratio);
+	--line-height-small: calc(0.8*var(--ratio));
+	--border-thin: var(--s-5);
+	--border-thick: var(--s-2);
+	line-height: var(--ratio);
+	/* font-size: calc(.333vw + 1em); 最小値を確保できる*/
+	/* font-size:calc(1rem + 0.33vw); */
+	font-size: 62.5%;/* いつものやり方 */
+	font-family: var(--font-plain);
+	background-color: var(--color-light);
+	color: var(--color-dark);
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+
+/* ↓ Backslash で colon をエスケープ */
+.font-size\:base {
+  font-size: 1rem;
+}
+
+.font-size\:biggish {
+  font-size: 1.75rem;
+}
+
+.font-size\:big {
+  font-size: 2.25rem;
+}

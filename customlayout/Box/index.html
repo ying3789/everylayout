@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box | custom layout</title>
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="Box.css">
+	<script type="module" src="Box.js"></script>
+</head>
+<body>
+	<stack-l>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nesciunt, pariatur ratione et blanditiis fugiat natus eaque, quae possimus magni dolorum earum consequuntur! Rerum commodi laudantium numquam! Eligendi, dolorum at?</p>
+		<blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae mollitia, repellendus voluptas cupiditate ipsa id rem quaerat earum fugiat dolore non, repudiandae dicta asperiores blanditiis commodi? Magnam, sed suscipit?</blockquote>
+		<box-l>
+			垂直方向のマージンによって分離されているボックス
+		</box-l>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta exercitationem et ullam quidem aut inventore nulla aliquid commodi unde! In fugiat, voluptatum ut praesentium doloremque accusantium est sequi at hic?</p>
+
+
+	</stack-l>
+
+	<box-l padding="0">
+		<box-l borderWidth="0" invert>ヘッダー</box-l>
+		<box-l borderWidth="0">本文。ヘッダーのinvertがきいていない？</box-l>
+	</box-l>
+</body>
+</html>

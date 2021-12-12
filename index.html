@@ -5,12 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EveryLayout</title>
+	<link rel="stylesheet" href="css/common.css">
 </head>
 <body>
 	<h2>demoリンク</h2>
 	<ul>
 		<li>トップ：<a href="https://every-layout.dev/" target="_blank">https://every-layout.dev/</a></li>
 		<li>Stack：<a href="https://every-layout.dev/demos/stack-recursion/" target="_blank">https://every-layout.dev/demos/stack-recursion/</a></li>
+		<li>Stack：<a href="https://every-layout.dev/demos/stack-variants/" target="_blank">https://every-layout.dev/demos/stack-variants/</a></li>
 		<li>Stack：<a href="https://every-layout.dev/demos/stack-split/" target="_blank">https://every-layout.dev/demos/stack-split/</a></li>
 		<li>Center：<a href="https://every-layout.dev/demos/center-documentation-layout/" target="_blank">https://every-layout.dev/demos/center-documentation-layout/</a></li>
 		<li>Cluster：<a href="https://every-layout.dev/demos/cluster-ctas/" target="_blank">https://every-layout.dev/demos/cluster-ctas/</a></li>
@@ -44,21 +46,39 @@
 		<li>Icon：https://every-layout.dev/downloads/Icon.zip</li>
 	</ul>
 
-	<!-- <h3>カスタム要素確認用</h3>
+	<h3>カスタム要素確認用</h3>
+	<p>※ liveserverなどを起動させて確認すること。</p>
 	<ul>
-		<li>Stack：<a href="https://every-layout.dev/downloads/Stack.zip" target="_blank">Stack</a></li>
-		<li>Box：<a href="https://every-layout.dev/downloads/Box.zip" target="_blank">Box</a></li>
-		<li>Center：<a href="https://every-layout.dev/downloads/Center.zip" target="_blank">Center</a></li>
-		<li>Cluster：<a href="https://every-layout.dev/downloads/Cluster.zip" target="_blank">Cluster</a></li>
-		<li>Sidebar：<a href="https://every-layout.dev/downloads/Sidebar.zip" target="_blank">Sidebar</a></li>
-		<li>Switcher：<a href="https://every-layout.dev/downloads/Switcher.zip" target="_blank">Switcher</a></li>
-		<li>Cover：<a href="https://every-layout.dev/downloads/Cover.zip" target="_blank">Cover</a></li>
-		<li>Grid：<a href="https://every-layout.dev/downloads/Grid.zip" target="_blank">Grid</a></li>
-		<li>Frame：<a href="https://every-layout.dev/downloads/Frame.zip" target="_blank">Frame</a></li>
-		<li>Reel：<a href="https://every-layout.dev/downloads/Reel.zip" target="_blank">Reel</a></li>
-		<li>Imposter：<a href="https://every-layout.dev/downloads/Imposter.zip" target="_blank">Imposter</a></li>
-		<li>Icon：<a href="https://every-layout.dev/downloads/Icon.zip" target="_blank">Icon</a></li>
-	</ul> -->
+		<li>Stack：<a href="./customlayout/Stack/index.html" target="_blank">Stack</a></li>
+		<li>Box：<a href="./customlayout/Box/index.html" target="_blank">Box</a></li>
+		<!-- <li>Center：<a href="./customlayout/Center/index.html" target="_blank">Center</a></li>
+		<li>Cluster：<a href="./customlayout/Cluster/index.html" target="_blank">Cluster</a></li>
+		<li>Sidebar：<a href="./customlayout/Sidebar/index.html" target="_blank">Sidebar</a></li>
+		<li>Switcher：<a href="./customlayout/Switcher/index.html" target="_blank">Switcher</a></li>
+		<li>Cover：<a href="./customlayout/Cover/index.html" target="_blank">Cover</a></li>
+		<li>Grid：<a href="./customlayout/Grid/index.html" target="_blank">Grid</a></li>
+		<li>Frame：<a href="./customlayout/Frame/index.html" target="_blank">Frame</a></li>
+		<li>Reel：<a href="./customlayout/Reel/index.html" target="_blank">Reel</a></li>
+		<li>Imposter：<a href="./customlayout/Imposter/index.html" target="_blank">Imposter</a></li>
+		<li>Icon：<a href="./customlayout/Icon/index.html" target="_blank">Icon</a></li> -->
+	</ul>
+
+	<h2>ユーティリティクラス</h2>
+	<p class="font-size:big">フォントサイズ</p>
+	<p>フォントサイズはvwで画面幅によって拡大しても良い場合はvwを使う。1rem+vwで最小値を確保できる。<br>
+	62.5%を指定して1remを10pxにするやり方の場合は、スマホで小さくなりすぎないかチェック。</p>
+
+
+	<h2>Stack</h2>
+	<p>垂直方向のマージンの役割</p>
+	<p>marginは0 autoではなくrightとleftのみ指定する。</p>
+	<p><a href="./html/Stack/index.html">Stackの例。</a></p>
 	
+	<h2>Box</h2>
+	<p>個々の要素の固有のスタイルを管理する</p>
+	<p>コンテンツのグループ化。paddingとborder</p>
+	<p><a href="./html/Box/index.html">Boxの例。</a></p>
+
+	<p></p>
 </body>
 </html>

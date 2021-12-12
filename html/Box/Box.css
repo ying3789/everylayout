@@ -1,0 +1,26 @@
+.box {
+	--color-light:hsl(0,0%,80%);/* #eee; */
+	--color-dark:hsl(0,0%,20%);/* #222; */
+	color:var(--color-dark);
+	background-color: var(--color-light);
+	padding: var(--s1);
+	border: var(--border-thin) solid;
+
+	/* 常に透明のアウトラインを適用することでハイコントラストモードに備える */
+	outline: var(--border-thin) transparent;
+	outline-offset: calc(var(--border-thin) * 1);
+}
+.box * {
+	/* ボックスの背景を変えた時に、
+	判読性を保つためにcolorの変更も必要になる。それを簡単に行う */
+	color:inherit;
+}
+
+.box.invert {
+	/* 暗い色は明るい色に、明るい色は黒井色に変わる */
+	color:var(--color-light);
+	background: var(--color-dark);
+
+	/* or グレースケールでは以下で実現できる（colorはhslで宣言） */
+	/* filter:invert(100%); */
+}

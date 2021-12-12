@@ -1,0 +1,24 @@
+.stack {
+	/* フレックスコンテキスト */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+	/* 既存の垂直マージンを削除 */
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.stack > * + * {
+	/* 連続する要素だけに上方向のマージンを適用 */
+  margin-top: var(--space, 1.5rem);
+}
+
+.stack > :nth-child(2) {
+  margin-bottom: auto;
+	/* https://every-layout.dev/demos/stack-split/ の例のように、
+	高さの決まったCover要素がある時、
+	ふたつめの要素より後ろの要素がボックスの下部にまとめる */
+}
