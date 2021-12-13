@@ -1,0 +1,14 @@
+.center {
+	max-width:60ch;
+	margin-left: auto;
+	margin-right: auto;
+
+	box-sizing: content-box;/* 60chを確保するため */
+	padding-left:var(--s1);
+	padding-right:var(--s1);
+
+	/* 内在的な中央揃え 子要素が幅にかかわらず中央揃えになる */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
