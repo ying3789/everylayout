@@ -1,0 +1,19 @@
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap:var(--space,1rem);/* 1remはフォールバック値 */
+	background: pink;
+	justify-content: center;/* 主軸の位置揃え */
+	align-items: center;/* 交差軸の位置揃え */
+}
+
+.space-between{
+	justify-content: space-between;
+}
+
+.test {
+	padding: var(--s1);
+	background-color: rgb(255, 253, 152);
+	font-size: 3rem;
+}
+
