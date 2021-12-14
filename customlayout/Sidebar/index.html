@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sidebar | custom layout</title>
+	<link rel="stylesheet" href="Sidebar.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<script type="module" src="./Sidebar.js"></script>
+	<style>
+		img {width:100%}
+	</style>
+</head>
+<body>
+	<sidebar-l space="var(--s2)" sideWidth="15ch" noStretch>
+		<img src="https://placehold.jp/350x150.png" alt="">
+		<p>画像に伴うテキスト</p>
+	</sidebar-l>
+
+
+	<sidebar-l space="var(--s2)" side="right" sideWidth="30ch">
+		<div>
+			<img src="https://placehold.jp/350x150.png" alt="">
+		</div>
+		<p>画像に伴うテキスト</p>
+	</sidebar-l>
+</body>
+</html>
