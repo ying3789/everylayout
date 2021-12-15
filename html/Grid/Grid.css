@@ -1,0 +1,12 @@
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+	--minimum: 20ch;
+}
+
+@supports(width:min(var(--minimum),100%)){
+	.grid {
+		/* min()関数によって複数カラムになるように強化 */
+		grid-template-columns: repeat(auto-fit,minmax(min(var(--minimum),100%),1fr));
+	}
+}
