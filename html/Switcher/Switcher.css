@@ -1,0 +1,29 @@
+.switcher {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gutter,var(--s1));
+	/* レイアウトの分岐点となる幅 */
+	--threshold: 30rem;
+}
+
+.switcher > * {
+	/* 子要素の伸長を許可 */
+	flex-grow: 1;
+	/* ↓コンテナの現在の幅100% 指定された30remのブレイクポイント
+	コンテナがthresholdの30remより狭ければ正、ひろければ負の値。*999で非常に大きな正、負の値を生成する。
+	flex-basisでは負の値は無効のため無視され、０になる。 */
+	flex-basis: calc((var(--threshold) - 100%) * 999);
+	background-color: pink;
+}
+
+/* 他の兄弟要素に2倍になる */
+/* .switcher > :nth-child(2) {
+	flex-grow:2;
+	background: purple;
+} */
+
+/* 4つ以上の子要素が存在すれば垂直方向の配置に切り替え */
+.switcher > :nth-last-child(n+5),
+.switcher > :nth-last-child(n+5) ~ * {
+	flex-basis: 100%;
+}
