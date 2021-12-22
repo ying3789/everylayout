@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reel | custom layout</title>
+	<link rel="stylesheet" href="Reel.css">
+	<link rel="stylesheet" href="../Box/Box.css">
+	<link rel="stylesheet" href="../Stack/Stack.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<script type="module" src="./Reel.js"></script>
+	<script type="module" src="../Box/Box.js"></script>
+	<script type="module" src="../Stack/Stack.js"></script>
+</head>
+<body>
+	<reel-l itemWidth="20rem">
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+		<box-l>
+			<stack-l>
+				カードのコンテンツ
+			</stack-l>
+		</box-l>
+	</reel-l>
+
+	<h2>スライド可能なリンク</h2>
+	<!-- スクリーンリーダーに対してコンポーネントをリストとして出力するために、role="list"とrole="listitem"を使用している。 
+	ナビゲーション領域ではこのようにするのが通例。-->
+	<reel-l role="list" noBar>
+		<div role="listitem">
+			<a class="cta" href="">ホーム</a>
+		</div>
+		<div role="listitem">
+			<a class="cta" href="">私たちについて</a>
+		</div>
+		<div role="listitem">
+			<a class="cta" href="">価格</a>
+		</div>
+		<div role="listitem">
+			<a class="cta" href="">ドキュメント</a>
+		</div>
+		<div role="listitem">
+			<a class="cta" href="">お客様の声</a>
+		</div>
+	</reel-l>
+
+
+</body>
+</html>

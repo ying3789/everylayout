@@ -1,0 +1,70 @@
+.reel {
+	/* 調整しやすくするためのカスタムプロパティ */
+	--space:1rem;
+	--color-light:#fff;
+	--color-dark:#000;
+	--reel-height:auto;
+	--item-width:25ch;
+	display: flex;
+	height:var(--reel-height);
+	/* ↓はみ出しの設定 水平方向のスクロールのみ */
+	overflow-x: auto;
+	overflow-y: hidden;
+	/* ↓firefox用 */
+	scrollbar-color: var(--color-light) var(--color-dark);
+}
+
+.reel::-webkit-scrollbar {
+	/* 
+	↓代わりに、スクロールバーの高さを変数にすることもできる
+	*/
+	height: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+	background-color: var(--color-dark);
+}
+
+.reel::-webkit-scrollbar-thumb {
+	background-color: var(--color-dark);
+	/* ↓線形グラデーションによって黒いバーの中に白いつまみを挿入する */
+	background-image:linear-gradient(
+		var(--color-dark) 0,
+		var(--color-dark) 0.25rem,
+		var(--color-light) 0.25rem,
+		var(--color-light) 0.75rem,
+		var(--color-dark) 0.75rem
+	);
+}
+
+.reel > * {
+	/* 
+	↓デフォルトではflex-shrink:1が適応されているためwidthの宣言だけではうまく機能しない
+	*/
+	flex: 0 0 var(--item-width);
+}
+
+.reel > img {
+	/* ↓画像のリセット */
+	height: 100%;
+	flex-basis: auto;
+	width: auto;
+}
+
+.reel > * + * {
+	margin-left: var(--space);
+}
+
+.reel.overflowing:not(.no-bar) {
+	/* ↓スクロールバーがある場合にのみ適用（jsを参照） */
+	padding-bottom: var(--space);
+}
+
+/* ↓no-barクラスでスクロールバーを削除 */
+.reel.no-bar {
+	scrollbar-width: none;
+}
+
+.reel.no-bar::-webkit-scrollbar {
+	display: none;
+}

@@ -15,9 +15,9 @@ img {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	/* display: flex;
+	display: flex;
 	justify-content: center;
-	align-items: center; */
+	align-items: center;
 }
 
 /* クロップ */
