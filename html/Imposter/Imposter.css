@@ -1,0 +1,20 @@
+.imposter {
+	/* ↓左上の角を中央に配置 styleでpositioningを上書きできる */
+	/* position: var(--positioning),absolute; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* ↓要素の中央が位置指定コンテンツの中央になるように位置変更 */
+	transform: translate(-50%,-50%);
+}
+
+
+/* containを使用するとはみ出しに対応 */
+.imposter.contain {
+	--margin: 0px;
+	/* ↓はみ出しをふせぐ/2remにより位置指定コンテナとの余白をつくる */
+	max-width: calc(100% - var(--margin) * 2);
+	max-height: calc(100% - var(--margin) * 2);
+	/* ↓スクロールバー */
+	overflow: auto;
+}

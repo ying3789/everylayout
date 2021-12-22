@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Imposter | custom layout</title>
+	<link rel="stylesheet" href="Imposter.css">
+	<link rel="stylesheet" href="../Box/Box.css">
+	<link rel="stylesheet" href="../Stack/Stack.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<script type="module" src="./Imposter.js"></script>
+	<script type="module" src="../Box/Box.js"></script>
+	<script type="module" src="../Stack/Stack.js"></script>
+</head>
+<body>
+	<div style="position:relative">
+		<!-- aria-hidden="true"によりスクリーンリーダーでも読ませない -->
+		<p aria-hidden="true">
+			重ね合わされるコンテンツ
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laudantium amet reprehenderit sit ab. Consequatur, vero mollitia modi veniam ab, maxime laborum natus molestiae animi voluptates eos quisquam exercitationem dolor.
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequuntur incidunt nobis sit omnis nemo dolores sapiente? Soluta, quae molestias, sunt dignissimos distinctio molestiae quidem unde, sed eligendi a qui.
+		</p>
+		<imposter-l>
+			<box-l style="background-color:var(--color-light)">
+				<p class="h4">
+					<strong>このボックスがあるので、コンテンツ全体を見ることはできません</strong>
+				</p>
+			</box-l>
+		</imposter-l>
+	</div>
+</body>
+</html>
