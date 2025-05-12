@@ -16,9 +16,8 @@
   margin-top: var(--space, 1.5rem);
 }
 
-.stack > :nth-child(2) {
-  margin-bottom: auto;
+.stack-false {
+	margin-bottom: auto;
 	/* https://every-layout.dev/demos/stack-split/ の例のように、
-	高さの決まったCover要素がある時、
-	ふたつめの要素より後ろの要素がボックスの下部にまとめる */
+	高さの決まったCover要素がある時、後ろの要素がボックスの下部にまとめる */
 }
