@@ -16,11 +16,11 @@
 	background-color: pink;
 }
 
-/* 他の兄弟要素に2倍になる */
-/* .switcher > :nth-child(2) {
+/* 他の兄弟要素の2倍になる */
+.switcher > :nth-child(2) {
 	flex-grow:2;
 	background: purple;
-} */
+}
 
 /* 4つ以上の子要素が存在すれば垂直方向の配置に切り替え */
 .switcher > :nth-last-child(n+5),
