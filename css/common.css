@@ -5,12 +5,14 @@
 	box-sizing:border-box;
 }
 
+/* 例外）センターレイアウトではコンテンツ自身のサイズが重要になる。 */
 .center-l {
 	box-sizing: content-box;
 }
 
 
 :root {
+	/* カスタムプロパティ */
 	--font-plain: Helvetica Neue,Helvetica,Arial,sans-serif;
 	--font-special: Barlow Condensed,Helvetica,sans-serif;
 	--font-mono: Menlo,Courier,Courier New,Andale Mono,monospace;
@@ -31,7 +33,8 @@
 	--s3: calc(var(--s0)*var(--ratio)*var(--ratio)*var(--ratio));
 	--s4: calc(var(--s0)*var(--ratio)*var(--ratio)*var(--ratio)*var(--ratio));
 	--s5: calc(var(--s0)*var(--ratio)*var(--ratio)*var(--ratio)*var(--ratio)*var(--ratio));
-	--measure: 65ch;
+	--measure: 65em;
+	/* 65ch;英語の場合は0の横幅のch。 */
 	--line-height: var(--ratio);
 	--line-height-small: calc(0.8*var(--ratio));
 	--border-thin: var(--s-5);
@@ -61,4 +64,9 @@ body {
 
 .font-size\:big {
   font-size: 2.25rem;
+}
+
+
+html,body,div,header,nav,main,footer {
+	max-width: none;
 }
